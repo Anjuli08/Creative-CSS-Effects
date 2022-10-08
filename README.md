@@ -16,12 +16,12 @@
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> 
 
 # Contributing Guidelines📝
-
-Are we missing any of your favorite features, which you think you can add to it? For major changes, please open an issue first to discuss what you would like to change. You are welcome to contribute in this project. Pull requests are welcome.
+ You are welcome to contribute in this project. 
 
 To start contributing, follow the below guidelines: 
 
 **1.**  Fork [this](https://github.com/Anjuli08/Creative-CSS-Effects) repository.
+        you can also star it additionally
 
 **2.**  Clone your forked copy of the project.
 
