@@ -58,6 +58,11 @@ git checkout -b <your_branch_name>
 
 **7.** Perfom your desired changes to the code base.
 
+ **a)** Create a new folder and add the files you are creating in that folder.
+      'OR'
+
+ **b)** Simply perform changes if you are editing existing folders or files.
+
 **8.** Commit your changes .
 
 ```
