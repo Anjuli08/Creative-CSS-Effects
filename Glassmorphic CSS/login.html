@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <meta charset="utf.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.8" />
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: monospace;
+            font-size: 15px;
+            background-image: url("img/bg.png");
+        }
+        
+        .wrap {
+            box-shadow: 0 0 20px rgb(117, 116, 116);
+            border-radius: 20px;
+            background-color: rgba(131, 127, 127, 0.63);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            /* backdrop-filter: blur(10px); */
+            position: absolute;
+            width: 500px;
+        }
+        
+        .wrap:before {
+            width: 100%;
+            height: 100%;
+            -webkit-background-size: cover;
+            background-size: cover;
+            border-radius: 20px;
+            /* background-color: rgba(114, 111, 111, 0.418);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); */
+            z-index: -1;
+            content: '';
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            display: block;
+        }
+        
+        form {
+            margin: 100px 400px 100px;
+            border-radius: 20px;
+            width: 400;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(158, 153, 153);
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #6296a3fb;
+            border-radius: 20px;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #fa665c;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            margin-top: -50px;
+        }
+        
+        img.avatar {
+            width: 20%;
+            border-radius: 50%;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+        
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form">
+
+        <form action="/action_page.php" method="post">
+            <div class="wrap">
+                <div class="imgcontainer"><img src="img/log.png" alt="avatar" class="avatar"></div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me
+                    </label>
+
+                </div>
+                <div class="container">
+                    <button type="button " class="cancelbtn ">Cancel</button>
+                    <span class="psw ">Forgot<a href="# ">password?</a></span>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
