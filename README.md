@@ -55,22 +55,22 @@ git pull upstream main
 git checkout -b <your_branch_name>
 ```
 
-**8.** Perfom your desired changes to the code base.
+**7.** Perfom your desired changes to the code base.
 
-**9.** Commit your changes .
+**8.** Commit your changes .
 
 ```
 git commit -m "Relevant message"
 ```
 
-**10.** Push the committed changes in your feature branch of your remote repo.
+**9.** Push the committed changes in your feature branch of your remote repo.
 
 ```
 git push -u origin <your_branch_name>
 ```
 
 
-**11.** Click on `Create Pull Request`.
+**10.** Click on `Create Pull Request`.
 
  Wait for your submission to be accepted and your PR to be merged.
 
