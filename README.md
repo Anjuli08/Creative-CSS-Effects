@@ -2,7 +2,6 @@
 <h1 align="center">Creative-CSS-Effectss🎨🎭</h1>
 
 ![Hactoberfest](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red)    
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-orange.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
