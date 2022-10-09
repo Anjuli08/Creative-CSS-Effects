@@ -2,15 +2,43 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111" />
     <link rel="stylesheet" href="design.css">
-    <link rel="stylesheet" href="script.js">
+
     <title>Slider Puzzle</title>
+
+
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
 </head>
 
-<body>
+<body translate="no">
+    <div class="text">Use up and down arrow key to solve puzzle and reverse accordingly</div>
     <div class="container">
         <div class="grid">
             <div class="piece piece-1 empty"></div>
@@ -24,5 +52,94 @@
             <div class="piece piece-9"><span>3</span></div>
         </div>
     </div>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/lax.js'></script>
+    <script id="rendered-js">
+        lax.init();
+
+        lax.addDriver("scrollDriver", function () {
+            return window.scrollY;
+        });
+
+        let easing = "linear";
+
+        // piece number + cardinal direction to move. note: the piece number is not the number on the tile, it's the number as if you counted 1, 2, 3, 4, etc from the top left of the grid.
+        let moves = ["2w", "5n", "6w", "9n", "8e", "7e", "4s", "6w", "5s", "3w", "9n", "8n", "7e", "5s", "3s", "2e", "6n", "4n", "5w", "3s", "8w", "7n"];
+
+        let values = moves.map((m, i) => i * 500); // 0, 500, 1000, 2000, 2500, etc...
+
+        values.push(moves.length * 500); // idk, it needs an extra move
+
+        let pieces = [];
+
+        // seed pieces array, which tells the x and y distance to move for each move
+        for (let i = 0; i < 10; i++) {
+            if (window.CP.shouldStopExecution(0)) break;
+            pieces.push({ x: [0], y: [0] });
+        }
+
+        // create the array of values to pass into Lax.js. Essentially it's the x and y position for each piece at each interval.
+        window.CP.exitedLoop(0); moves.map((m, i) => {
+            pieces.forEach((p, j) => {
+                let changeX = 0;
+                let changeY = 0;
+
+                // if the piece to move is the current piece, move by amount in direction
+                if (m[0] == j + 1) {
+                    if (m[1] === "w") {
+                        changeX = -100;
+                    }
+
+                    if (m[1] === "e") {
+                        changeX = 100;
+                    }
+
+                    if (m[1] === "n") {
+                        changeY = -100;
+                    }
+
+                    if (m[1] === "s") {
+                        changeY = 100;
+                    }
+                }
+
+                // otherwise it will be the same as its current position
+                p.x.push(p.x[p.x.length - 1] + changeX);
+                p.y.push(p.y[p.y.length - 1] + changeY);
+            });
+        });
+
+        pieces.forEach((p, i) => {
+            lax.addElements(`.piece-${i + 1}`, {
+                scrollDriver: {
+                    translateY: [
+                        values,
+                        p.y,
+                        {
+                            easing
+                        }],
+
+
+                    translateX: [
+                        values,
+                        p.x,
+                        {
+                            easing
+                        }]
+                }
+            });
+
+
+
+
+        });
+//# sourceURL=pen.js
+    </script>
+
+
+
 </body>
+
 </html>
