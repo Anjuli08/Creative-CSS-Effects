@@ -1,0 +1,39 @@
+.piece {
+    background: #30908a;
+    border-radius: 6px;
+    margin: 3px;
+    box-shadow: 0px 2px 4px 0px #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.piece span {
+    font-size: 36px;
+    font-family: monospace;
+    color: #fff;
+}
+.empty {
+    background: none;
+    box-shadow: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px #65cfa6;
+}
+.container {
+    position: relative;
+    height: 12500px;
+}
+body {
+    background: #35f4a6;
+}
