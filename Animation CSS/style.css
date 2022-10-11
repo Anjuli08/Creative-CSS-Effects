@@ -16,6 +16,7 @@ section {
     align-items: center;
     min-height: 100vh;
     background-image: url('bg.png');
+    background-size: cover;
 }
 
 section .color {
