@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Finding Nemo</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section></section>
+    <script type="text/javascript">
+    function createBubbles() {
+      const section = document.querySelector('section')
+      const createElement = document.createElement('span')
+
+      var size = Math.random() * 60;
+
+      createElement.style.width = 23 + size + 'px';
+      createElement.style.height = 23 + size + 'px';
+      createElement.style.left = Math.random() * innerWidth + "px";
+      section.appendChild(createElement);
+
+      setTimeout(() => {
+        createElement.remove()
+      }, 4000)
+    }
+    setInterval(createBubbles, 50);
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+</html>

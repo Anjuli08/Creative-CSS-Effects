@@ -76,7 +76,7 @@ git push -u origin <your_branch_name>
 ```
 
 
-**10.** Click on `Create Pull Request`.
+**10.** Click on `Create Pull Request`. It would be better to provide a little description or **SCREENSHOT** of your work.
 
  Wait for your submission to be accepted and your PR to be merged.
 
