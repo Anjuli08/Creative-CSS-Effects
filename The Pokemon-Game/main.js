@@ -114,19 +114,19 @@ init()
 window.addEventListener('keydown', function(e){
     if(e.key == "ArrowUp"){
         player_vel.y = 3
-        player.style.backgroundImage = 'url("assets/player_front.png")'
+        player.style.backgroundImage = 'url("https://static.wikia.nocookie.net/pokemon/images/5/57/Red_FireRed_and_LeafGreen.png/revision/latest?cb=20220702182643")'
     }
     if(e.key == "ArrowDown"){
         player_vel.y = -3
-        player.style.backgroundImage = 'url("assets/player_back.png")'
+        player.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuvKBZ7c0uPK1LAWa4aRcklbFeikSVMU_nnQLHlQk&s")'
     }
     if(e.key == "ArrowLeft"){
         player_vel.x = -3
-        player.style.backgroundImage = 'url("assets/player_left.png")'
+        player.style.backgroundImage = 'url("asset/player_left.png")'
     }
     if(e.key == "ArrowRight"){
         player_vel.x = 3
-        player.style.backgroundImage = 'url("assets/player_right.png")'
+        player.style.backgroundImage = 'url("asset/player_right.png")'
     }
     player.classList.add('active')
 })
