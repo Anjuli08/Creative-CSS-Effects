@@ -1,0 +1,45 @@
+body{
+    background-image: url("asset/land.png");
+}
+
+.player{
+    width: 80px;
+    height: 100px;
+    background-image: url("asset/player_front.png");
+    background-size: 240px 100px;
+    background-position: -80px 0;
+    position: fixed;
+    z-index: 999;
+}
+.player.active{
+    animation: .2s walk linear infinite;
+}
+
+@keyframes walk{
+    0%, 32%{
+        background-position: 0 0;
+    }
+    33%, 65%{
+        background-position: -80px 0;
+    }
+    66%, 100%{
+        background-position: -160px 0;
+    }
+}
+
+.bush{
+    width: 50px;
+    height: 40px;
+    background-image: url("asset/bush.png");
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.pokeball{
+    width: 30px;
+    height: 30px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuvKBZ7c0uPK1LAWa4aRcklbFeikSVMU_nnQLHlQk&s");
+    background-size: 100% 100%;
+    position: fixed;
+}
