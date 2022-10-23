@@ -1,0 +1,91 @@
+body {
+    /*background-color: #eee;*/
+     /*background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );*/
+    text-align: center;
+    color: white;
+    background-image: conic-gradient(lightpink, lightpink, whitesmoke);
+
+ background-image: url("img3.jpg");
+  background-size: cover;
+background-repeat: no-repeat;
+ 
+
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    
+   
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   cursor: -webkit-grab; cursor: grab/pointer;
+}
+
+input {
+    width: 100%;
+    padding: 5px 14px;
+    border: 2px solid #201f1d;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.4);
+    outline: none;
+    /*color: #fff;*/
+    color: white;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(60,60,60);
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
