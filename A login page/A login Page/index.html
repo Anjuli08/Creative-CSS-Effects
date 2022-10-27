@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="roject.jpg" alt="" height="150px" width="250px">
+            </div>
+            <div class="image">
+                <img src="woman.png" alt="">
+            </div>
+            <div class="text">
+                Start for free and <br> get ready to create someting interesting !
+            </div>
+        </div>
+        <form id="form">
+            <div class="social">
+                <div class="title">What do you want to make?</div>
+                <div class="question">Already have an account?<br><br>
+                <span>Sign In</span></div>
+                <div class="btn">
+                    <div class="btn1">
+                        <img src="https://img.icons8.com/color/30/000000/google-logo.png" alt="">
+                        Sign Up
+                    </div>
+                    <div class="btn2">
+                        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="">
+                        Sign Up
+                    </div>
+                </div>
+                <div class="or">Or</div>
+             </div>
+            <div>
+                <label for="Username">Username</label>
+                <i class='fas fa-user-alt'></i>
+                <input type="text" name="User" id="Username" placeholder="Harry Potter">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="harry123@gmail.com">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" name="Password" id="Password" placeholder="har23@5%3">
+                <i class="far fa-eye eye" id="togglePassword" onclick="Toggle()"></i>
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <button id ="button" type="submit">Submit</button>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+
+    
+</body>
+</html>
