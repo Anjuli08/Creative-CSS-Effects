@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background: #03314b;
+  }
+  body {
+    background: #03314b;
+  }
+  
+  .bor {
+    /* width: 48%;
+    height: 60%;
+    margin: 5% auto; */
+    /* float: right; */
+    margin-top: 105px;
+    text-align: center;
+    /* margin-left: 200px; */
+  }
+  
+  .gif {
+    border-radius: 100%;
+    border: 2px;
+    height: 150px;
+  }
+  .lo {
+    font-size: 30px;
+    text-align: center;
+  }
+  .box {
+    text-align: center;
+    display: block;
+  }
+  
+  .box input[type="email"],
+  .box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid aqua;
+    padding: 14px 10px;
+    width: 270px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  .box input[type="email"]:focus,
+  .box input[type="password"]:focus {
+    width: 370px;
+    border-color: #06df68;
+  }
+  
+  #log {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #06df68;
+    padding: 14px 10px;
+    width: 120px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  
+  #log:hover {
+    
+    border-color: aqua;
+    color: #06df68;
+    width: 140px;
+  }
+  #rr{
+    background: none;
+    /* float: left; */
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: center;
+  
+  }
+  
+  #rocket {
+    animation: fly 6s infinite ease-in-out;
+  }
+  #shadow {
+    animation: fly 6s infinite linear;
+  }
+  
+  @keyframes fly {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: scalex(1.1);
+    }
+  }
+  
