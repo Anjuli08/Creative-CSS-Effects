@@ -5,7 +5,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-![Begginers Friendly](https://img.shields.io/badge/Begginer%20Friendly%20-Yes-orange)
+![Beginners Friendly](https://img.shields.io/badge/Beginner%20Friendly%20-Yes-orange)
 
 
 ![Screenshot (83)](https://user-images.githubusercontent.com/90701800/194696231-71d915ba-e2e3-449b-a57e-834270bfb27a.png)
